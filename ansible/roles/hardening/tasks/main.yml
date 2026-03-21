@@ -1,0 +1,20 @@
+---
+- name: Show OS
+  debug:
+    msg: "Running on {{ ansible_system }}"
+
+- name: Apply Linux hardening
+  include_tasks: linux.yml
+  when: ansible_os_family in ["RedHat", "Debian", "Suse"]
+
+- name: Apply AIX hardening
+  include_tasks: aix.yml
+  when: ansible_system == "AIX"
+
+- name: Apply Solaris hardening
+  include_tasks: solaris.yml
+  when: ansible_system == "SunOS"
+
+- name: Apply FreeBSD hardening
+  include_tasks: freebsd.yml
+  when: ansible_system == "FreeBSD"
