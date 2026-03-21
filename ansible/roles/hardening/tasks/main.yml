@@ -5,7 +5,7 @@
 
 - name: Apply Linux hardening
   include_tasks: linux.yml
-  when: ansible_os_family in ["RedHat", "Debian", "Suse"]
+  when: ansible_system == "Linux"
 
 - name: Apply AIX hardening
   include_tasks: aix.yml
