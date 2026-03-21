@@ -5,6 +5,12 @@
     regexp: '^PermitRootLogin'
     line: 'PermitRootLogin no'
 
+- name: Ensure password authentication disabled
+  lineinfile:
+    path: /etc/ssh/sshd_config
+    regexp: '^PasswordAuthentication'
+    line: 'PasswordAuthentication no'
+
 - name: Restart SSH
   service:
     name: sshd
