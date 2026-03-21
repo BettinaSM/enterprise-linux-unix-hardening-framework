@@ -1,0 +1,7 @@
+---
+- name: Enterprise Hardening Framework
+  hosts: all
+  become: yes
+
+  roles:
+    - hardening
