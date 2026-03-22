@@ -1,4 +1,7 @@
 ---
+- name: Gather system facts
+  setup:
+
 - name: Show OS
   debug:
     msg: "Running on {{ ansible_system }}"
