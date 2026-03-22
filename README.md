@@ -55,6 +55,17 @@ The framework detects the operating system and applies the correct hardening tas
 
 ---
 
+## 🔄 OS Detection Logic
+
+The playbook uses Ansible facts such as:
+
+- ansible_system
+- ansible_os_family
+
+To dynamically apply OS-specific hardening.
+
+---
+
 ## 🧠 Skills Demonstrated
 
 - Multi-OS administration
