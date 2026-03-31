@@ -1,6 +1,6 @@
-# 🌍 Enterprise Linux/Unix Hardening Framework
+# Enterprise Linux/Unix Hardening Framework
 
-## 📌 Overview
+## Overview
 
 This project simulates a real-world enterprise environment with multiple operating systems, including Linux and legacy Unix systems.
 
@@ -8,7 +8,7 @@ It provides a structured approach to security hardening using automation and OS-
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 - Standardize security across multiple OS
 - Automate hardening using Ansible
@@ -17,7 +17,7 @@ It provides a structured approach to security hardening using automation and OS-
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 - Ansible roles for automation
 - OS detection and conditional execution
@@ -26,7 +26,7 @@ It provides a structured approach to security hardening using automation and OS-
 
 ---
 
-## 🖥️ Supported Systems
+## Supported Systems
 
 ### Linux
 - RHEL / Oracle Linux
@@ -40,7 +40,7 @@ It provides a structured approach to security hardening using automation and OS-
 
 ---
 
-## ⚙️ Features
+## Features
 
 - SSH hardening
 - Firewall configuration
@@ -49,13 +49,13 @@ It provides a structured approach to security hardening using automation and OS-
 
 ---
 
-## 🚀 How It Works
+## How It Works
 
 The framework detects the operating system and applies the correct hardening tasks automatically.
 
 ---
 
-## 🔄 OS Detection Logic
+## OS Detection Logic
 
 The playbook uses Ansible facts such as:
 
@@ -66,7 +66,7 @@ To dynamically apply OS-specific hardening.
 
 ---
 
-## 🧠 Skills Demonstrated
+## Skills Demonstrated
 
 - Multi-OS administration
 - Enterprise infrastructure design
@@ -76,6 +76,6 @@ To dynamically apply OS-specific hardening.
 
 ---
 
-## ⚠️ Notes
+## Notes
 
 This project simulates enterprise environments and should be adapted before production use.
